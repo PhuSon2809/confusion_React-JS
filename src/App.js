@@ -1,18 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Main from './components/MainComponent';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Main from "./components/MainComponent";
+import { BrowserRouter } from "react-router-dom";
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
-  render(){
-    return(
-      <div className='App'>
-      <Main/>
-    </div>
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
