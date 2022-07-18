@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardTitle,
+} from "reactstrap";
 
 function RenderMenuItem({ dish, onClick }) {
   return (
@@ -14,27 +21,29 @@ function RenderMenuItem({ dish, onClick }) {
     </Card>
   );
 }
-class Menu extends Component{
-  constructor(props){
+class Menu extends Component {
+  constructor(props) {
     super(props);
   }
 
-  render(){
+  render() {
     const menu = this.props.dishes.map((dish) => {
       return (
         <div className="col-12 col-md-5 m-1">
           <div key={dish.id}>
-          <RenderMenuItem dish={dish} onClick={this.props.onClick}/>
+            <RenderMenuItem dish={dish} onClick={this.props.onClick} />
           </div>
         </div>
       );
     });
-  
+
     return (
       <div className="container">
         <div className="row">
           <Breadcrumb>
-            <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+            <BreadcrumbItem>
+              <Link to="/home">Home</Link>
+            </BreadcrumbItem>
             <BreadcrumbItem active>Menu</BreadcrumbItem>
           </Breadcrumb>
           <div className="col-12">

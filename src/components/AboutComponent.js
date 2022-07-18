@@ -12,9 +12,9 @@ import { Link } from "react-router-dom";
 function About(props) {
   const leaders = props.leaders.map((leader) => {
     return (
-      <div className="row">
+      <div className="row mb-3">
         <Media className="col-12 col-sm-2">
-          <Media object src={leader.image} />
+          <Media object src={leader.image} className="align-self-center"/>
         </Media>
         <div className="col-12 col-sm-7">
           <Media heading className="d-block">{leader.name}</Media>

@@ -43,37 +43,37 @@ function Footer(props) {
           <div className="col-12 col-sm-4 align-self-center">
             <div className="text-center">
               <a
-                class="btn btn-social-icon btn-google"
+                className="btn btn-social-icon btn-google"
                 href="http://google.com/+"
               >
-                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <i className="fa fa-google-plus" aria-hidden="true"></i>
               </a>
               <a
-                class="btn btn-social-icon btn-facebook"
+                className="btn btn-social-icon btn-facebook"
                 href="http://www.facebook.com/profile.php?id="
               >
-                <i class="fa fa-facebook"></i>
+                <i className="fa fa-facebook"></i>
               </a>
               <a
-                class="btn btn-social-icon btn-linkedin"
+                className="btn btn-social-icon btn-linkedin"
                 href="http://www.linkedin.com/in/"
               >
-                <i class="fa fa-linkedin"></i>
+                <i className="fa fa-linkedin"></i>
               </a>
               <a
-                class="btn btn-social-icon btn-twitter"
+                className="btn btn-social-icon btn-twitter"
                 href="http://twitter.com/"
               >
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-twitter" aria-hidden="true"></i>
               </a>
               <a
-                class="btn btn-social-icon btn-google"
+                className="btn btn-social-icon btn-google"
                 href="http://youtube.com/"
               >
-                <i class="fa fa-youtube"></i>
+                <i className="fa fa-youtube"></i>
               </a>
-              <a class="btn btn-social-icon" href="mailto:">
-                <i class="fa fa-envelope-o"></i>
+              <a className="btn btn-social-icon" href="mailto:">
+                <i className="fa fa-envelope-o"></i>
               </a>
             </div>
           </div>

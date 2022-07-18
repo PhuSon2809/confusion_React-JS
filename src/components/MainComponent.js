@@ -8,6 +8,7 @@ import { Redirect, Route, Switch, withRouter } from "react-router-dom";
 import Contact from "./ContactComponent";
 import About from "./AboutComponent";
 import { connect } from "react-redux";
+import TestFetchComponent from "../useFetch/TestFetchComponent";
 
 const mapStateToProps = state => {
   return{
@@ -50,6 +51,7 @@ class Main extends Component {
           <Route exact path='/contactus' component={Contact} />
           <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders}/>} />
           <Route path='/menu/:dishId' component={DishWithId} />
+          <Route path='/testfetch' component={TestFetchComponent} />
           <Redirect to='/home'/>
         </Switch>
         <Footer/>

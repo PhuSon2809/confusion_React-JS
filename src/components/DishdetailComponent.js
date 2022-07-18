@@ -8,15 +8,16 @@ import {
   CardTitle,
   Breadcrumb,
   BreadcrumbItem,
+  Button,
 } from "reactstrap";
 
 export function RenderDish({ dish }) {
   return (
-    <div className="col-12 col-sm-5">
+    <div>
       <Card>
         <CardImg top src={dish.image} alt={dish.name} />
         <CardBody>
-          <CardTitle>{dish.name}</CardTitle>
+          <CardTitle tag="h5">{dish.name}</CardTitle>
           <CardText>{dish.description}</CardText>
         </CardBody>
       </Card>
@@ -36,7 +37,7 @@ export function RenderComments({ comments }) {
     );
   });
   return (
-    <div className="col-12 col-sm-7">
+    <div>
       <h2>Comments</h2>
       {comment}
     </div>
@@ -66,11 +67,18 @@ class DishDetail extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-md-5 m-1">
-              <RenderDish dish={dish}/>
+            <div className="col-12 col-md-5 m-1 mb-2">
+              <RenderDish dish={dish} />
             </div>
             <div className="col-12 col-md-5 m-1">
-              <RenderComments comments={comments}/>
+              <RenderComments comments={comments} />
+            </div>
+          </div>
+          <div className="row mb-5">
+            <div className="col-12 ml-1">
+              <Button color="primary">
+                <Link to="/testfetch" className="nav-link text-white">Add new comment</Link>
+              </Button>
             </div>
           </div>
         </div>
